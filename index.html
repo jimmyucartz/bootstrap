@@ -4,18 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
-    <title>Bootstrap</title>
+    <title>Bootstrap | Grids Container Button</title>
   </head>
-  <body>
-    <section class="bg-secondary text-light min-vh-100">
-      <h1>Bootstrap</h1>
-      <div class="d-none d-sm-flex">
-        <p>
-          Bootstrap is a free and open-source CSS framework directed at
-          responsive, mobile-first front-end web development. It contains HTML,
-          CSS and JavaScript-based design templates for typography, forms,
-          buttons, navigation, and other interface components.
-        </p>
+  <body class="min-vh-100 bg-secondary text-light">
+    <section class="px-5">
+      <h1>Containers</h1>
+      <div class="container border my-2">
+        <p>Container</p>
+      </div>
+      <div class="container-lg border my-2">
+        <p>Container with BreakPoint</p>
+      </div>
+      <div class="container-fluid border my-2">
+        <p>Container Fluid</p>
+      </div>
+    </section>
+
+    <section class="px-5">
+      <h1>Grid</h1>
+      <div class="container-fluid">
+        <div
+          class="row justify-content-center align-items-center g-2 bg-success"
+        >
+          <div class="border col">Column 1</div>
+          <div class="border col">Column 2</div>
+          <div class="border col">Column 3</div>
+        </div>
+      </div>
+      <h5>One Column width</h5>
+      <div class="row bg-info">
+        <div class="border col">Col</div>
+        <div class="border col-6">Col -6</div>
+        <div class="border col">Col</div>
+      </div>
+      <h5>Responsive</h5>
+      <div class="row bg-info">
+        <div class="border col-sm-8">Col sm-8</div>
+        <div class="border col-sm-2">Col sm-2</div>
+        <div class="border col-sm-2">Col sm-2</div>
+      </div>
+      <br />
+      <div class="row bg-warning">
+        <div class="border col-sm-8">Col sm-8</div>
+        <div class="border col-md-2">Col md-2</div>
+        <div class="border col-lg-2">Col lg-2</div>
+      </div>
+    </section>
+    <section class="px-5">
+      <h5>Button</h5>
+      <div class="container-fluid">
+        <button class="my-1 my-md-0 btn btn-primary">Primary Button</button>
+        <button class="my-1 my-md-0 btn btn-secondary">Secondary Button</button>
+        <button class="my-1 my-md-0 btn btn-success">Success Button</button>
+        <button class="my-1 my-md-0 btn btn-danger">Danger Button</button>
+        <button class="my-1 my-md-0 btn btn-warning">Warning Button</button>
+        <button class="my-1 my-md-0 btn btn-info">Info Button</button>
+        <button class="my-1 my-md-0 btn btn-light">Light Button</button>
+        <button class="my-1 my-md-0 btn btn-dark">Dark Button</button>
+        <!-- <button class="my-1 my-md-0 btn btn-link">Link Button</button> -->
       </div>
     </section>
   </body>
