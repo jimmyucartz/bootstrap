@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <title>Bootstrap | Input Types Modals Popover</title>
+  </head>
+  <body class="min-vh-100 bg-secondary text-light">
+    <section>
+      <h4>Input Types</h4>
+      <div style="display: flex; align-items: center; justify-content: center">
+        <form style="text-align: center; width: 50%">
+          <div class="mb-3">
+            <label for="" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              aria-describedby="helpId"
+              placeholder="Name"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              aria-describedby="helpId"
+              placeholder="Password"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="check1"
+            />
+            <label class="form-check-label" for="check1">
+              Default checkbox
+            </label>
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="check2"
+            />
+            <label class="form-check-label" for="check2">
+              Default checkbox
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="radio_sel"
+              id="type1_radio"
+              value="{3:option1}"
+            />
+            <label class="form-check-label" for="type1_radio">first</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="radio_sel"
+              id="type2_radio"
+              value="option2"
+            />
+            <label class="form-check-label" for="type2_radio">second</label>
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label"></label>
+            <textarea
+              class="form-control"
+              name="text_Are"
+              id="textrea"
+              rows="3"
+            ></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label">City</label>
+            <select
+              class="form-select form-select-lg"
+              name="city"
+              id="city_sel"
+              multiple
+            >
+              <option selected>Select one</option>
+              <option value="">New Delhi</option>
+              <option value="">Istanbul</option>
+              <option value="">Jakarta</option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section>
+      <h4>Modal</h4>
+      <div>
+        <!-- Modal trigger button -->
+        <button
+          type="button"
+          class="btn btn-outline-success btn-lg text-light border-light"
+          data-bs-toggle="modal"
+          data-bs-target="#modalId"
+        >
+          Open Modal
+        </button>
+
+        <!-- Modal Body -->
+        <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+        <div
+          class="modal fade"
+          id="modalId"
+          tabindex="-1"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          role="dialog"
+          aria-labelledby="modalTitleId"
+          aria-hidden="true"
+        >
+          <div
+            class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
+            role="document"
+          >
+            <div class="modal-content bg-dark">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalTitleId">Hello</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                Body<br />
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi, fugit!
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Optional: Place to the bottom of scripts -->
+      </div>
+    </section>
+
+    <section>
+      <h4>Popover</h4>
+      <div class="mb-5" style="height: 100px">
+        <button
+          type="button"
+          id="popover-btm"
+          class="btn btn-lg btn-danger"
+          data-bs-toggle="popover"
+          data-bs-title="Popover title"
+          data-bs-content="And here's some amazing content. It's very engaging. Right?"
+        >
+          Click to toggle
+        </button>
+      </div>
+    </section>
+
+    <!--  -->
+    <!-- <script>
+      const myModal = new bootstrap.Modal(
+        document.getElementById("modalId"),
+        options
+      );
+    </script> -->
+
+    <script>
+      $(document).ready(function () {
+        $("#popover-btm").popover({ placement: "bottom" });
+      });
+    </script>
+
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--  -->
+  </body>
+</html>
