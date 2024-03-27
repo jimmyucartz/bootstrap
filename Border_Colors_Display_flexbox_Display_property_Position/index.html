@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .border-clr div {
+        border-color: greenyellow;
+      }
+    </style>
+    <title>
+      Bootstrap | Border Colors Display-flexbox Display-property Position
+    </title>
+  </head>
+  <body>
+    <section class="border-clr">
+      <h4>
+        Border
+        <div
+          style="display: flex; gap: 40px; margin-top: 20px; padding-left: 2px"
+        >
+          <div style="width: 100px; height: 100px" class="border"></div>
+          <div style="width: 100px; height: 100px" class="border-bottom"></div>
+          <div style="width: 100px; height: 100px" class="border-start"></div>
+          <div style="width: 100px; height: 100px" class="border-end"></div>
+          <div
+            style="width: 100px; height: 100px"
+            class="border border-end-0"
+          ></div>
+          <div
+            style="width: 100px; height: 100px"
+            class="border border-top-0"
+          ></div>
+          <div
+            style="width: 100px; height: 100px"
+            class="border border-primary"
+          ></div>
+          <div
+            style="width: 100px; height: 100px"
+            class="border border-primary border-5"
+          ></div>
+
+          <div
+            style="width: 100px; height: 100px"
+            class="border border-primary rounded-pill"
+          ></div>
+
+          <div
+            style="width: 100px; height: 100px"
+            class="border border-primary rounded-pill rounded-top-0"
+          ></div>
+        </div>
+      </h4>
+    </section>
+    <section>
+      <h4>Colors</h4>
+      <div>
+        <p class="text-primary">Text Primary</p>
+        <p class="text-secondary">Text</p>
+        <p class="text-success">Text</p>
+        <p class="text-info">Text</p>
+        <p class="text-danger">Text</p>
+        <p class="text-warning">Text</p>
+        <p class="text-warning-emphasis">Text E</p>
+        <p class="text-danger-emphasis">Text E</p>
+        <p class="text-primary-emphasis">Text E</p>
+        <p class="text-success-emphasis">Text E</p>
+        <p class="text-secondary-emphasis">Text E</p>
+        <p class="text-info-emphasis">Text E</p>
+        <!--  -->
+        <p class="text-white bg-dark">Text E</p>
+        <p c lass="text-black">Text E</p>
+      </div>
+    </section>
+    <section class="container-fluid">
+      <h4>Display flexbox</h4>
+
+      <div class="bg-dark text-light d-flex">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat
+        cumque beatae amet ex blanditiis corrupti deleniti, eligendi unde
+        quisquam non, iusto eius nesciunt odio commodi quas? Ad sequi reiciendis
+        aspernatur!
+      </div>
+      <h5>Flex Direction</h5>
+      <h6>Row</h6>
+      <div class="bg-danger text-light d-flex flex-row">
+        <div class="bg-info text-light d-flex p-2 w-25">1</div>
+        <div class="bg-primary text-light d-flex p-2 w-25">2</div>
+        <div class="bg-dark text-light d-flex p-2 w-25">3</div>
+      </div>
+      <br /><br /><br />
+      <div class="bg-danger text-light d-flex flex-row-reverse">
+        <div class="bg-info text-light d-flex p-2 w-25">1</div>
+        <div class="bg-primary text-light d-flex p-2 w-25">2</div>
+        <div class="bg-dark text-light d-flex p-2 w-25">3</div>
+      </div>
+      <br /><br /><br />
+      <h6>Column</h6>
+
+      <div class="bg-danger text-light d-flex flex-column px-5">
+        <div class="bg-info text-light d-flex p-2 w-100">1</div>
+        <div class="bg-primary text-light d-flex p-2 w-100">2</div>
+        <div class="bg-dark text-light d-flex p-2 w-100">3</div>
+      </div>
+
+      <br /><br /><br />
+      <div class="bg-danger text-light d-flex flex-column-reverse px-5">
+        <div class="bg-info text-light d-flex p-2 w-100">1</div>
+        <div class="bg-success text-light d-flex p-2 w-100">2</div>
+        <div class="bg-warning text-light d-flex p-2 w-100">3</div>
+      </div>
+
+      <br /><br />
+      <!--  -->
+
+      <!--  -->
+    </section>
+    <section>
+      <h4>Display Property</h4>
+      <b>Responsive containers/ breaks at certain break points</b>
+      <div class="row px-5">
+        <div class="d-flex bg-success my-2">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+          corporis magni nulla ad numquam ex itaque, autem consequatur
+          perspiciatis aperiam, officiis asperiores magnam soluta maiores in
+          dolor dolores nemo at?
+        </div>
+        <div class="d-none d-md-inline bg-warning my-2">
+          Lorem, ipsum dolor.
+        </div>
+        <div class="d-none d-sm-block bg-success my-2">
+          Lorem ipsum dolor sit.
+        </div>
+        <div class="d-table bg-primary my-2">Lorem, ipsum dolor.</div>
+        <div class="d-grid bg-dark text-light my-2">Lorem, ipsum dolor.</div>
+        <div class="d-table bg-success my-2">Lorem, ipsum dolor.</div>
+        <div class="d-none d-lg-inline-flex bg-danger my-2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nobis,
+          quibusdam corporis fuga architecto sit explicabo accusantium magni
+          repellat possimus maiores. Natus eos reiciendis adipisci unde
+          repudiandae saepe vitae obcaecati.
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid">
+      <h4>Position</h4>
+      <div class="position-fixed bg-success z-1 top-0" style="height: 200px">
+        Fixed<br />
+      </div>
+
+      <div class="position-static bg-warning" style="height: 100px">Static</div>
+      <div class="position-relative bg-info" style="height: 100px">
+        Relative
+      </div>
+      <div
+        class="position-absolute bg-danger z-3 bottom-0"
+        style="height: 100px"
+      >
+        Absolute
+      </div>
+      <div class="position-sticky bg-secondary" style="height: 100px">
+        Sticky
+      </div>
+    </section>
+  </body>
+</html>
